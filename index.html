@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Promise </title>
+    <style>
+        body {
+            background: #ecf0f3;
+        }
+
+        .card-wrap {
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .card {
+            width: 20%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #ecf0f3;
+            text-align: center;
+            border-radius: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            box-shadow: 18px 18px 30px #d1d9e6, -18px -18px 30px #fff;
+        }
+
+        .flex-end {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+        }
+
+        input {
+            font-size: 22px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 8px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-end">
+        <input type="text" placeholder="search">
+        <button onclick="getUniversity()"> Search </button>
+        <select onchange="getUniversity()">
+            <option value="Uzbekistan"> Uzbekistan </option>
+            <option value="Turkey"> Turkiya </option>
+            <option selected value="United States"> AQSH </option>
+        </select>
+    </div>
+    <div class="card-wrap">
+        <div style="height:100vh;width:100%;display: flex; justify-content:center ;align-items:center">
+            <img src="./loading.svg" alt="">
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
